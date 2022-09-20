@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<!--Program name: purchase fxml file 
+Programmer: Joona Huomo 
+Date: January 31st 2021 
+Description: Contains the layout of the purchase successful pop up, and the button that is on it -->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.Shop">
+   <children>
+      <Label id="label_setbutton" layoutX="81.0" layoutY="26.0" stylesheets="@application.css" text="Purchase Successful!" />
+      <Canvas fx:id="purchaseCanvas" height="64.0" layoutX="105.0" layoutY="86.0" width="90.0" />
+      <Button layoutX="110.0" layoutY="195.0" mnemonicParsing="false" onAction="#okClose" text="OK" />
+   </children>
+</Pane>

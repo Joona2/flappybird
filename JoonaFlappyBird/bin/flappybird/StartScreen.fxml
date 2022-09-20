@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<!--Program name: Start screen fxml file 
+Programmer: Joona Huomo 
+Date: January 31st 2021 
+Description: Contains the layout of the start screen, and the buttons, and labels that are on it  -->
+
+<BorderPane prefHeight="889.0" prefWidth="750.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.StartScreenController">
+   <center>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="startCanvas" height="768.0" width="750.0" />
+            <Button layoutX="425.0" layoutY="683.0" mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Change Key" />
+            <Button layoutX="141.0" layoutY="560.0" mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Start" translateZ="1.0" />
+            <Button layoutX="418.0" layoutY="475.0" mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="How To Play" />
+            <Button layoutX="145.0" layoutY="683.0" mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Quit" />
+            <Button layoutX="481.0" layoutY="580.0" mnemonicParsing="false" onAction="#changeSceneButtonHandler" text="Shop" />
+            <Label fx:id="highScore" alignment="TOP_CENTER" layoutX="6.0" layoutY="268.0" prefHeight="19.0" prefWidth="739.0" text="Highscore: 0" />
+         </children>
+      </Group>
+   </center>
+</BorderPane>

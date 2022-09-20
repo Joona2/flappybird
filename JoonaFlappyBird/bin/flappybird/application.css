@@ -1,0 +1,72 @@
+/*
+ * Program name: Application css
+ * Programmer: Joona Huomo
+ * Date: January 31st 2021
+ * Description: Contains all the different colour options, and aesthetics for the buttons as well as the backgrounds
+ */
+
+/*VBox*/
+VBox{
+	-fx-background-image: url("/images/start.jpg");
+}
+
+/*button*/
+.button{
+	-fx-focus-color: transparent;
+	-fx-background-insets: -1,0,1,1;
+	   -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 80%, #ffff00, #ff6e00);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-color:orange;
+    -fx-font-weight: bold;
+    -fx-font-size: 3em;
+}
+
+/*shop label*/
+#label_shop{
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+    -fx-font-size: 2em;
+}
+
+/*set button label*/
+#label_setbutton{
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+}
+
+/*label*/
+.label{
+	-fx-text-fill: orange;
+    -fx-font-weight: bold;
+    -fx-font-size: 3em;
+}
+
+/*pane*/
+Pane{
+	-fx-background-image: url("/images/daybackground.png");
+}
+
+/*text area*/
+.text-area { 
+	-fx-font-size: 1.5em;
+	-fx-text-fill: orange;
+} 
+
+/*text area*/
+.text-area { 
+	-fx-font-size: 1.5em;
+	-fx-text-fill: orange;
+} 
+
+/* text area content*/
+.text-area .content { 
+	-fx-background-image: url("/images/nightbackground.png");
+}

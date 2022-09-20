@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.BorderPane?>
+
+<!--Program name: Flappy bird fxml file 
+Programmer: Joona Huomo 
+Date: January 31st 2021 
+Description: Contains the canvas that the game is displayed on -->
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.FlappyBirdController">
+   <center>
+      <Canvas fx:id="gameCanvas" height="768.0" width="750.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

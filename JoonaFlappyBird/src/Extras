@@ -1,0 +1,18 @@
+Extras:
+
+PauseTransition do stuff with a delay
+Image Rotation
+Take snapshot of game screen and set it to the background of the end screen
+Any button that the user want to use can be used
+added infinitely looped background music
+added sound effects
+Added button click method so that you can't just hold down the button
+added many different custom photo shopped birds
+all info stored into files that store all the values so that if you close the game your money, skin, and high score will still be there
+all info loaded from files
+added image to button
+read out loud rules
+press button to start game
+Setting images to background of things in css
+Putting multiple canvas on top of each other
+added proper acceleration to bird

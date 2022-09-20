@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<!--Program name: End screen fxml file 
+Programmer: Joona Huomo 
+Date: January 31st 2021 
+Description: Contains the layout of the end scene, and the buttons, and labels that are on it  -->
+
+<BorderPane prefHeight="889.0" prefWidth="750.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.EndScreen">
+   <center>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="endCanvas" height="768.0" width="750.0" />
+            <Button layoutX="314.0" layoutY="359.0" mnemonicParsing="false" onAction="#onButtonClick" text="Retry" translateZ="1.0" />
+            <Label fx:id="endPoints" alignment="CENTER" layoutX="20.0" layoutY="213.0" prefHeight="55.0" prefWidth="710.0" text="Label" textFill="#ff8c00">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font></Label>
+            <Canvas fx:id="gameOver" height="160.0" layoutX="125.0" layoutY="28.0" width="500.0" />
+            <Button layoutX="323.0" layoutY="598.0" mnemonicParsing="false" onAction="#onButtonClick" text="Quit" />
+            <Button layoutX="222.0" layoutY="477.0" mnemonicParsing="false" onAction="#onButtonClick" text="Return To Menu" />
+            <Label fx:id="highScore" alignment="CENTER" layoutX="20.0" layoutY="277.0" prefHeight="55.0" prefWidth="710.0" text="Label" textFill="#ff8c00">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+   </center>
+</BorderPane>

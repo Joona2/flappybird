@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<!--Program name: Shop fxml file 
+Programmer: Joona Huomo 
+Date: January 31st 2021 
+Description: Contains the layout of the shop, and all the canvases, and ids, as well as the buttons that are used for buying  -->
+
+<BorderPane prefHeight="889.0" prefWidth="750.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.Shop">
+   <center>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="shopCanvas" height="768.0" width="750.0" />
+            <Label alignment="CENTER" layoutX="20.0" layoutY="7.0" prefHeight="55.0" prefWidth="710.0" text="Shop" textFill="#ff8c00">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Button layoutX="222.0" layoutY="663.0" mnemonicParsing="false" onAction="#onButtonClick" text="Return To Menu" />
+            <Canvas fx:id="shop1" height="64.0" layoutX="101.0" layoutY="141.0" width="90.0" />
+            <Canvas fx:id="shop2" height="64.0" layoutX="330.0" layoutY="141.0" width="90.0" />
+            <Canvas fx:id="shop3" height="64.0" layoutX="544.0" layoutY="141.0" width="90.0" />
+            <Canvas fx:id="shop4" height="64.0" layoutX="101.0" layoutY="384.0" width="90.0" />
+            <Canvas fx:id="shop5" height="64.0" layoutX="329.0" layoutY="384.0" width="90.0" />
+            <Canvas fx:id="shop6" height="64.0" layoutX="543.0" layoutY="384.0" width="90.0" />
+            <Button fx:id="button1" layoutX="100.0" layoutY="242.0" mnemonicParsing="false" onAction="#onButtonClick" text="Buy" />
+            <Button fx:id="button6" layoutX="541.0" layoutY="493.0" mnemonicParsing="false" onAction="#onButtonClick" text="Buy" />
+            <Button fx:id="button5" layoutX="328.0" layoutY="493.0" mnemonicParsing="false" onAction="#onButtonClick" text="Buy" />
+            <Button fx:id="button4" layoutX="100.0" layoutY="493.0" mnemonicParsing="false" onAction="#onButtonClick" text="Buy" />
+            <Button fx:id="button3" layoutX="541.0" layoutY="242.0" mnemonicParsing="false" onAction="#onButtonClick" text="Buy" />
+            <Button fx:id="button2" layoutX="327.0" layoutY="242.0" mnemonicParsing="false" onAction="#onButtonClick" text="Buy" />
+            <Label id="label_shop" layoutX="123.0" layoutY="205.0" stylesheets="@application.css" text="Free" />
+            <Label id="label_shop" layoutX="354.0" layoutY="205.0" stylesheets="@application.css" text="\$10" />
+            <Label id="label_shop" layoutX="567.0" layoutY="205.0" stylesheets="@application.css" text="\$15" />
+            <Label id="label_shop" layoutX="126.0" layoutY="460.0" stylesheets="@application.css" text="\$25" />
+            <Label id="label_shop" layoutX="561.0" layoutY="460.0" stylesheets="@application.css" text="\$100" />
+            <Label id="label_shop" layoutX="354.0" layoutY="460.0" stylesheets="@application.css" text="\$50" />
+            <Label id="label_shop" layoutX="104.0" layoutY="94.0" stylesheets="@application.css" text="Default" />
+            <Label id="label_shop" layoutX="545.0" layoutY="343.0" stylesheets="@application.css" text="Zombie" />
+            <Label id="label_shop" layoutX="328.0" layoutY="343.0" stylesheets="@application.css" text="Invisible" />
+            <Label id="label_shop" layoutX="109.0" layoutY="343.0" stylesheets="@application.css" text="Purple" />
+            <Label id="label_shop" layoutX="564.0" layoutY="94.0" stylesheets="@application.css" text="Blue" />
+            <Label id="label_shop" layoutX="341.0" layoutY="94.0" stylesheets="@application.css" text="Green" />
+            <Label fx:id="currentlyEquippedText" alignment="CENTER" layoutX="20.0" layoutY="591.0" prefHeight="55.0" prefWidth="710.0" text="Currently Equipped: Default" textFill="#ff8c00">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+   </center>
+</BorderPane>
